@@ -14,25 +14,31 @@ import { Provider } from "react-redux";
 import Cart from "./component/Cart";
 import Success from "./component/Success";
 import Cancel from "./component/Cancel";
+import OrderHistory from "./component/OrderHistory";
+import Birdsproducts from "./component/Birdsproducts";
+import CatProd from "./component/CatProducts";
 
 const App = () => {
-  return (
-    <div
-      style={{
-        background:
-          "radial-gradient(circle farthest-corner at center center, #F6F8F9 0%, #E5EBEE 30%, #D7DEE3 60%, #F5F7F9 100%)",
-        backgroundSize: "cover",
-      }}
+  return ( 
+    <div className=""
+      // style={{
+      //   background:
+      //     "radial-gradient(circle farthest-corner at center center, #F6F8F9 0%, #E5EBEE 30%, #D7DEE3 60%, #F5F7F9 100%)",
+      //   backgroundSize: "cover",
+      // }}
     >
       <Nav />
       <Routes>
         <Route path="/" element={<Slider/>}/>
         <Route path="/shop" element={<Dogsproducts/>}/>
+        <Route path="/birds" element={<Birdsproducts/>}/>
+        <Route path="/cats" element={<CatProd/>}/>
         <Route path="/qna" element={<FAQ/>}/>
         <Route path="/contact" element={<Contact/>}/>
         <Route path="/cart" element={<Cart/>}/>
         <Route path="/success" element={<Success/>}/>
         <Route path="/cancel" element={<Cancel/>}/>
+        <Route path="/orderhostory" element={<OrderHistory/>}/>
       </Routes>
       {/* <Slider /> */}
       <Footer/>

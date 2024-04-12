@@ -31,7 +31,11 @@ const Dogsproducts = ({cartItems}) => {
               <h3>{item.weight}</h3>
             </div>
             <p>{item.brand}</p>
+            <div className='gap-5 flex'>
             <button className=' bg-slate-800 text-white mb-2 mt-2 px-4 py-2 rounded-lg' onClick={()=>handleAddItem(item)}>Add to Cart</button>
+            {item.stock && <button className=' bg-red-800 text-white mb-2 mt-2 px-4 py-2 rounded-lg' >Out of stock</button>}
+
+            </div>
           </div>
         </div>
       ))}

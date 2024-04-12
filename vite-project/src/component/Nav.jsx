@@ -16,6 +16,8 @@ const Nav = () => {
         <Link to={"/qna"}>FAQ's</Link>
         <Link to={"/contact"}>Contact</Link>
         <Link to={"/cart"}>Cart ({cartItems.length} item)</Link>
+        <Link to={"/orderhistory"}>Orders</Link>
+
       </div>
     </div>
   );

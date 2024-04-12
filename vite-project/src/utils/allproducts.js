@@ -6,7 +6,8 @@ const dogProducts = [
       "price": 25.99,
       "weight": "10 kg",
       "brand": "Premium Pets",
-      "category": "Food"
+      "category": "Food",
+      "stock" : true
     },
     {
       "name": "Grain-Free Dog Food",
@@ -45,7 +46,8 @@ const dogProducts = [
       "img" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOL2IQfkBDNWPOPlkbNRwQvFhgMsIdjrYbDw&usqp=CAU",
 
       "brand": "VetGuard",
-      "category": "Vaccines"
+      "category": "Vaccines",
+      "stock" : true
     },
     {
       "name": "Designer Dog Sweater",
@@ -76,7 +78,8 @@ const dogProducts = [
       "name":" Bird Toys",
       "img":"https://m.media-amazon.com/images/I/51z0G7g3wyL.SX300_SY300_QL70_FMwebp.jpg",
       "price": "“299”",
-      "description": "“Boltz Bird Ladder and Hanging chewable Wooden Swing Bird Toys for Budgies,Cockatiel,Finches,Kannur Birds- Made with Bamboo- 3 Piece”"
+      "description": "“Boltz Bird Ladder and Hanging chewable Wooden Swing Bird Toys for Budgies,Cockatiel,Finches,Kannur Birds- Made with Bamboo- 3 Piece",
+      "stock" : true
       },
       
       {
@@ -123,52 +126,48 @@ const dogProducts = [
       "description": "KSK Perch Platform for Bird Cage,Natural Wooden ChewToys Perch Stand Platform Bird Toy for Canary Parakeet Cockatiel Parrot Budgie Sparrow"
       },
 
-    //   {
-    //     "name": "Smart White Bentonite Cat Litter",
-    //     "description": "Natural Composition: Crafted entirely from 100% natural white bentonite clay, ensuring an organic and safe litter choice for your feline friend.
-    //                 Dust-Free Formula: Engineered with a dust-free formulation, providing a clean and healthy environment for pets and their owners.",
-    //     "price": "354",
-    //     "image":"https://m.media-amazon.com/images/I/717Byk66BLL.SL1500.jpg" ,
-    // },
-    // {
-    //     "name": "Drools Real Chicken Biscuits",
-    //     "description": "Drools Cat Biscuit is made with real chicken and is a great reward for your cats
-    //     Crunchy texture helps to clean teeth and freshen breath which avoids the bad smell from the mouth",
-    //     "price": "216",
-    //     "image": "https://m.media-amazon.com/images/I/71YmWZBVJlL.SL1500.jpg",
-    // },
-    // {
-    //     "name": "Stainless Steel Printed Pet Bowl",
-    //     "description": "The pet bowls are made of stainless steel making them resistant to rust and scratches.
-    //     The pet bowls have an anti-skid bottom that gives stability when your pet is feeding out of it without causing any spillage.
-    //     ",
-    //     "price": "179",
-    //     "image": "https://m.media-amazon.com/images/I/81j2BHEDKkL.SL1500.jpg",
-    // },
-    // {
-    //     "name": "Goofy Tails Hemp Paw Cream for Cats",
-    //     "description": "Hemp Paw Butter for Cats: Goofy Tails paw cream for cats and kittens provides year round protection and is ideal for alleviating dry, chapped or sore patches of skin.",
-    //     "price": "275",
-    //     "image": "https://m.media-amazon.com/images/I/61w-wEDxhiL.SL1500.jpg",
-    // },
-    // {
-    //     "name": "Nail Cutter Clipper Trimmer Filer ",
-    //     "description": "Stainless steel Sharpness blades: The pet nail clippers are made out of high quality 4.0 mm thick stainless steel sharp blades, it is powerful enough to trim your dogs or cats nails with just one cut, these durable clippers won't bend, scratch or rust, and the blades still keep sharp even through many sessions on dog tough nails.",
-    //     "price": "185",
-    //     "image": "https://m.media-amazon.com/images/I/71zYsVRmvjL.SL1500.jpg",
-    // },
-    // {
-    //     "name": "Pet Clean Pet Wipes",
-    //     "description": "Fresh and refreshing: Pet Clean Grooming Wipes offer a refreshing cherry blossom scent that leaves your pets smelling fresh and clean. Say goodbye to unpleasant odors and embrace the delightful fragrance that lingers after each use.",
-    //     "price": "199",
-    //     "image": "https://m.media-amazon.com/images/I/51xMd4q7XBL.SL1500.jpg",
-    // },
-    // {
-    //     "name": "Pet Clean Primrose Oil Eye & Ear Pads ",
-    //     "description": "Gentle Care for Eyes and Ears: Specially formulated to clean, deodorize, and dry your pet's ears and eyes. These wipes provide a soothing and effective solution for maintaining eye and ear hygiene, ensuring your pet's comfort and well-being.",
-    //     "price": "289",
-    //     "image": "https://m.media-amazon.com/images/I/41bZHG50S-L.jpg",
-    // },
+      {
+        "name": "Smart White Bentonite Cat Litter",
+        "description": "Natural Composition: Crafted entirely from 100% natural white bentonite clay, ensuring an organic and safe litter choice for your feline friend. Dust-Free Formula: Engineered with a dust-free formulation, providing a clean and healthy environment for pets and their owners",
+        "price": "354",
+        "image":"https://m.media-amazon.com/images/I/717Byk66BLL.SL1500.jpg" ,
+    },
+    {
+        "name": "Drools Real Chicken Biscuits",
+        "description": "Drools Cat Biscuit is made with real chicken and is a great reward for your catsCrunchy texture helps to clean teeth and freshen breath which avoids the bad smell from the mouth",
+        "price": "216",
+        "image": "https://m.media-amazon.com/images/I/71YmWZBVJlL.SL1500.jpg",
+    },
+    {
+        "name": "Stainless Steel Printed Pet Bowl",
+        "description": "The pet bowls are made of stainless steel making them resistant to rust and scratches.The pet bowls have an anti-skid bottom that gives stability when your pet is feeding out of it without causing any spillage",
+        "price": "179",
+        "image": "https://m.media-amazon.com/images/I/81j2BHEDKkL.SL1500.jpg",
+    },
+    {
+        "name": "Goofy Tails Hemp Paw Cream for Cats",
+        "description": "Hemp Paw Butter for Cats: Goofy Tails paw cream for cats and kittens provides year round protection and is ideal for alleviating dry, chapped or sore patches of skin.",
+        "price": "275",
+        "image": "https://m.media-amazon.com/images/I/61w-wEDxhiL.SL1500.jpg",
+    },
+    {
+        "name": "Nail Cutter Clipper Trimmer Filer ",
+        "description": "Stainless steel Sharpness blades: The pet nail clippers are made out of high quality 4.0 mm thick stainless steel sharp blades, it is powerful enough to trim your dogs or cats nails with just one cut, these durable clippers won't bend, scratch or rust, and the blades still keep sharp even through many sessions on dog tough nails.",
+        "price": "185",
+        "image": "https://m.media-amazon.com/images/I/71zYsVRmvjL.SL1500.jpg",
+    },
+    {
+        "name": "Pet Clean Pet Wipes",
+        "description": "Fresh and refreshing: Pet Clean Grooming Wipes offer a refreshing cherry blossom scent that leaves your pets smelling fresh and clean. Say goodbye to unpleasant odors and embrace the delightful fragrance that lingers after each use.",
+        "price": "199",
+        "image": "https://m.media-amazon.com/images/I/51xMd4q7XBL.SL1500.jpg",
+    },
+    {
+        "name": "Pet Clean Primrose Oil Eye & Ear Pads ",
+        "description": "Gentle Care for Eyes and Ears: Specially formulated to clean, deodorize, and dry your pet's ears and eyes. These wipes provide a soothing and effective solution for maintaining eye and ear hygiene, ensuring your pet's comfort and well-being.",
+        "price": "289",
+        "image": "https://m.media-amazon.com/images/I/41bZHG50S-L.jpg",
+    },
 
   ];
   

@@ -1,11 +1,11 @@
 import React from 'react'
 // import dogProducts from '../utils/allproducts'
-import birdprod from "../utils/birdprod"
+import catprod from "../utils/catprod"
 import { useDispatch } from 'react-redux'
 import { addItem } from '../utils/cartSlice'
 
 
-const Birdsproducts = ({cartItems}) => {
+const CatProd = ({cartItems}) => {
   const dispatch = useDispatch()
 
   const handleAddItem = (item)=>{
@@ -22,7 +22,7 @@ const Birdsproducts = ({cartItems}) => {
 
   return (
     <div className='flex flex-wrap items-center justify-evenly mt-5 '>
-      {birdprod.map((item,index)=>(
+      {catprod.map((item,index)=>(
         <div className="card hover:scale-[1.1] transition-all	-ease-linear-duration-100 lg:w-[30vw] w-[90%] lg:h-[35vw] h-fit mb-10 rounded-lg items-center justify-center flex lg:flex-col overflow-hidden shadow-lg ">
           <img style={{borderRadius:"1.2vw"}} className='px-2 lg:h-[20vw] h-[35vw] lg:w-[20vw] w-[30vw] rounded-lg bg-cover bg-center' src={item.img} alt="" />
           <div className="content px-3 py-1">
@@ -46,4 +46,4 @@ const Birdsproducts = ({cartItems}) => {
   )
 }
 
-export default Birdsproducts
+export default CatProd
