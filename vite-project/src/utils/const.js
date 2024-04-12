@@ -1,0 +1,1 @@
+export const SECRET_STRIPE_KEY="pk_test_51OppufSCTYfNrNc7xb9DBjv0n0dWgjPVUyrdf2mziLMIGbMoTeOf0mxJCI2Ho9N8oAvp3IjxKP2cTnR20Wd13H9c00dv6ZTgJV"
