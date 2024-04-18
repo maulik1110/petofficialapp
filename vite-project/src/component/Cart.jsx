@@ -30,36 +30,36 @@
 //   //   0
 //   // );
 
-//   const paymenthandler = async () => {
-//     const stripe = await loadStripe(SECRET_STRIPE_KEY);
+  // const paymenthandler = async () => {
+  //   const stripe = await loadStripe(SECRET_STRIPE_KEY);
 
-//     const body = {
-//       products: cartItems,
-//     };
-//     const headers = {
-//       "Content-Type": "application/json",
-//     };
-//     const response = await fetch(
-//       "http://localhost:7000/api/create-checkout-session",
-//       {
-//         method: "POST",
-//         headers: headers,
-//         body: JSON.stringify(body),
-//       }
-//     );
+  //   const body = {
+  //     products: cartItems,
+  //   };
+  //   const headers = {
+  //     "Content-Type": "application/json",
+  //   };
+  //   const response = await fetch(
+  //     "http://localhost:7000/api/create-checkout-session",
+  //     {
+  //       method: "POST",
+  //       headers: headers,
+  //       body: JSON.stringify(body),
+  //     }
+  //   );
 
-//     const session = await response.json();
-//     const result = stripe.redirectToCheckout({
-//       sessionId: session.id,
-//     });
+  //   const session = await response.json();
+  //   const result = stripe.redirectToCheckout({
+  //     sessionId: session.id,
+  //   });
 
-//     if (result.error) {
-//       console.log(response.error);
-//     }
+  //   if (result.error) {
+  //     console.log(response.error);
+  //   }
 
-//     dispatch(addOrder(orderDetails));
+  //   dispatch(addOrder(orderDetails));
 
-//   };
+  // };
 
 //   return (
 //     <div className="px-10">
@@ -127,6 +127,9 @@ import { useSelector, useDispatch } from "react-redux";
 import { addItem, removeItem } from "../utils/cartSlice";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { loadStripe } from "@stripe/stripe-js";
+import { SECRET_STRIPE_KEY } from "../utils/const";
+
 
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart.cart);
@@ -156,6 +159,39 @@ const Cart = () => {
   const toastRemoveOnClick = () => {
     toast("Item removed");
   };
+
+
+  const paymenthandler = async () => {
+    const stripe = await loadStripe(SECRET_STRIPE_KEY);
+
+    const body = {
+      products: cartItems,
+    };
+    const headers = {
+      "Content-Type": "application/json",
+    };
+    const response = await fetch(
+      "http://localhost:7000/api/create-checkout-session",
+      {
+        method: "POST",
+        headers: headers,
+        body: JSON.stringify(body),
+      }
+    );
+
+    const session = await response.json();
+    const result = stripe.redirectToCheckout({
+      sessionId: session.id,
+    });
+
+    if (result.error) {
+      console.log(response.error);
+    }
+
+    dispatch(addOrder(orderDetails));
+
+  };
+
 
   return cartItems.length>0 ? (
     <>
@@ -213,7 +249,7 @@ const Cart = () => {
         <h2 className="text-xl font-bold">
           Total Amount: Rs.{totalCost.toFixed(2)}
         </h2>
-        <button className="bg-slate-700 px-4 py-2 rounded-lg my-4 text-center font-semibold text-white mt-4">
+        <button onClick={paymenthandler} className="bg-slate-700 px-4 py-2 rounded-lg my-4 text-center font-semibold text-white mt-4">
           Pay: Rs.{totalCost.toFixed(2)}
         </button>
       </div>
