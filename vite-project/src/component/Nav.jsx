@@ -15,7 +15,8 @@ const Nav = () => {
         <Link to={"/shop"}>Shop</Link>
         <Link to={"/qna"}>FAQ's</Link>
         <Link to={"/contact"}>Contact</Link>
-        <Link to={"/cart"}>Cart ({cartItems.length} item)</Link>
+        {/* <Link to={"/cart"}>Cart ({cartItems.length} item)</Link> */}
+        <Link to={"/cart"}>Cart </Link>
         <Link to={"/orderhistory"}>Orders</Link>
 
       </div>

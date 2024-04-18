@@ -104,6 +104,8 @@
 import React, { useEffect, useState } from 'react'
 import AnimateText from "../component/AnimatedTexr"
 import ShopByPets from "../component/Catagory"
+import HomeDog from './HomeDog'
+import HomeCat from './HomeCat'
 
 const Slider = () => {
 
@@ -145,7 +147,9 @@ const Slider = () => {
 
 
     <AnimateText/>
-    <ShopByPets/>
+    {/* <ShopByPets/> */}
+    <HomeDog/>
+    <HomeCat/>
   </>
   );
   
