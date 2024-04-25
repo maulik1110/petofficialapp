@@ -44,7 +44,7 @@ const HomeCat = () => {
   };
   return (
     <div className="my-4 w-full">
-      <h1 className="text-center text-5xl my-4 font-semibold">
+      <h1 className="text-center text-5xl my-4 font-semibold underline">
         Cat Popular Products
       </h1>
       {/* <img src={dogtoy} alt="" /> */}

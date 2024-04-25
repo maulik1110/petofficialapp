@@ -56,7 +56,7 @@ const AnimateText = () => {
   // ***************** static images ****************
   return (
     <div className="main mt-5  text-black flex flex-col justify-between items-center py-[1vw] text-xl">
-      <h1 className="text-center font-semibold text-5xl my-4">Try these categories</h1>
+      <h1 className="text-center font-semibold text-5xl my-4 underline">Try these categories</h1>
       <div className="mq-container text-center flex justify-evenly w-full" speed={80} gradient={false} pauseOnHover autoFill>
           <Link to={"/shop/dogproducts"} className="flex flex-col items-center justify-center">
             <img className="h-44 w-44 " src={dogfood} alt="" />

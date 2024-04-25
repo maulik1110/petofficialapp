@@ -72,7 +72,7 @@ const Nav = () => {
         <div className="relative ml-4">
           <button
             onClick={() => setShowDropdowndogs(!showDropdowndogs)}
-            className="border-2 rounded-lg px-4 py-2 font-semibold"
+            className="border-[1px] border-black rounded-lg px-4 py-2 font-semibold"
             aria-haspopup="true"
             aria-expanded={showDropdowndogs ? "true" : "false"}
           >
@@ -104,7 +104,7 @@ const Nav = () => {
         <div className="relative ml-4">
           <button
             onClick={() => setShowDropdowncats(!showDropdowncats)}
-            className="border-2 rounded-lg px-4 py-2 font-semibold"
+            className="border-[1px] border-black rounded-lg px-4 py-2 font-semibold"
             aria-haspopup="true"
             aria-expanded={showDropdowncats ? "true" : "false"}
           >
@@ -136,7 +136,7 @@ const Nav = () => {
 
         
       </div>
-      <div className="links lg:flex gap-5 text-slate-900 font-semibold lg:text-lg">
+      <div className="links lg:flex gap-5 text-black font-semibold lg:text-lg">
         <Link to={"/"}>Home</Link>
         <Link to={"/shop"}>Shop</Link>
         <Link to={"/qna"}>FAQ's</Link>
