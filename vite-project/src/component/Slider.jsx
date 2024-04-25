@@ -139,9 +139,9 @@ const Slider = () => {
     }}
     >
     <img src={imgs[current]} className='w-1/2 mx-auto rounded-lg transition-all duration-300' style={{transition: "3s all-ease"}} alt="" />
-    <img className='w-[30vh] h-[40vh] absolute top-[7%] rounded-lg left-[20%] shadow-lg' src="https://images.unsplash.com/photo-1555169062-013468b47731?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
-    <h1 className='font-bold w-1/4 text-xl p-5 absolute bottom-[5%] text-left'>"Who needs a <span className='text-orange-400'> therapist </span> when you have a pet? <span className='text-orange-400'> Unconditional love </span> and free cuddles included!"</h1>
-    <p className='font-thin w-1/4 text-md p-5 absolute top-[5%] right-[0%] text-left'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia nisi qui magnam vitae doloremque molestias omnis animi facere eos voluptate.</p>
+    <img className='w-[50vh] h-[40vh] absolute top-[7%] rounded-lg left-[10%] shadow-md shadow-gray-700' src="https://images.unsplash.com/photo-1535930891776-0c2dfb7fda1a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+    <h1 className='font-semibold w-1/4 text-xl p-5 absolute bottom-[5%] text-left leading-tight'>"Who needs a <span className='text-orange-400'> therapist </span> when you have a pet? <span className='text-orange-400'> Unconditional love </span> and free cuddles included!"</h1>
+    <p className='font-semibold w-1/4 text-xl leading-tight p-5 absolute top-[5%] right-[0%] text-left'> Your personal joy generators, happiness ambassadors, and cuddle buddies all rolled into one!</p>
     <img  className='w-[40vh] h-[30vh] absolute bottom-[7%] rounded-lg right-[9%] shadow-lg' src="https://images.unsplash.com/photo-1494256997604-768d1f608cac?q=80&w=1858&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
     </div>
 

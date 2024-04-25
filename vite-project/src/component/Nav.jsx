@@ -72,11 +72,11 @@ const Nav = () => {
         <div className="relative ml-4">
           <button
             onClick={() => setShowDropdowndogs(!showDropdowndogs)}
-            className="bg-gray-200 rounded-lg px-4 py-2"
+            className="border-2 rounded-lg px-4 py-2 font-semibold"
             aria-haspopup="true"
             aria-expanded={showDropdowndogs ? "true" : "false"}
           >
-            Dogs 🔽
+            🐶 Dogs ▼
           </button>
           {showDropdowndogs && (
             <div className="absolute z-10 mt-2 w-40 bg-white rounded-lg shadow-lg">
@@ -104,11 +104,11 @@ const Nav = () => {
         <div className="relative ml-4">
           <button
             onClick={() => setShowDropdowncats(!showDropdowncats)}
-            className="bg-gray-200 rounded-lg px-4 py-2"
+            className="border-2 rounded-lg px-4 py-2 font-semibold"
             aria-haspopup="true"
             aria-expanded={showDropdowncats ? "true" : "false"}
           >
-            Cats 🔽
+            😺 Cats ▼
           </button>
           {showDropdowncats && (
             <div className="absolute z-10 mt-2 w-40 bg-white rounded-lg shadow-lg">
@@ -136,7 +136,7 @@ const Nav = () => {
 
         
       </div>
-      <div className="links lg:flex gap-5 text-slate-900 font-bold lg:text-lg">
+      <div className="links lg:flex gap-5 text-slate-900 font-semibold lg:text-lg">
         <Link to={"/"}>Home</Link>
         <Link to={"/shop"}>Shop</Link>
         <Link to={"/qna"}>FAQ's</Link>
