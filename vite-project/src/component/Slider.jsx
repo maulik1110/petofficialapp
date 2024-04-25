@@ -129,7 +129,7 @@ const Slider = () => {
 
     <>
     
-    <div className='w-full h-[70vh] relative' 
+    <div className='w-full h-[90vh] relative' 
     style={{
       backgroundImage: `url("https://img.freepik.com/premium-photo/abstract-white-background-product-display-with-banner-background_655634-81.jpg?w=360")`,
       backgroundSize: 'cover',

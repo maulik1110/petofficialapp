@@ -19,10 +19,14 @@ import Birdsproducts from "./component/Birdsproducts";
 import CatProd from "./component/CatProducts";
 import Shop from "./component/Shop";
 import CatProducts from "./component/CatProducts";
+import Medicine from "./component/Medicine";
+import Clothes from "./component/Clothes";
+import CatToys from "./component/CatToys";
+import MedicineCats from "./component/MedicineCats";
 
 const App = () => {
   return ( 
-    <div className="w-screen h-full overflow-hidden overflow-y-auto">
+    <div className="w-screen h-screen overflow-hidden overflow-y-auto">
       <Nav />
       <Routes>
         <Route path="/" element={<Slider/>}/>
@@ -30,6 +34,10 @@ const App = () => {
           <Route index element={<Navigate to ="dogproducts"/>}/>
           <Route path="dogproducts" element={<Dogsproducts/>}/>
           <Route path="catproducts" element={<CatProducts/>}/>
+          <Route path="medicine" element={<Medicine/>}/>
+          <Route path="clothes" element={<Clothes/>}/>
+          <Route path="cattoys" element={<CatToys/>}/>
+          <Route path="medicinecat" element={<MedicineCats/>}/>
         </Route>
         <Route path="/birds" element={<Birdsproducts/>}/>
         <Route path="/cats" element={<CatProd/>}/>

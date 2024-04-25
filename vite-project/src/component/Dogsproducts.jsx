@@ -59,6 +59,7 @@ const DogProducts = () => {
   const dispatch = useDispatch();
 
   const gettoys = async (startIdx, rowsCount) => {
+    
     setLoading(true);
 
     const response = await fetch(
