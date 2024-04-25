@@ -62,13 +62,13 @@ const AnimateText = () => {
             <img className="h-44 w-44 " src={dogfood} alt="" />
             <h1 className="my-2 font-semibold">Dog Food</h1>
             </Link>
-          <Link to={"/shop/medicine"}>
+          <Link to={"/shop/medicinecat"}>
              <img className="h-44 w-44" src={medicine} alt="" />
-            <h1 className="my-2 font-semibold">Medicined</h1>
+            <h1 className="my-2 font-semibold">Cat Medicine</h1>
             </Link>
           <Link to={"/shop/clothes"}>
              <img className="h-44 w-44 " src={cloth} alt="" />
-            <h1 className="my-2 font-semibold">Clothes</h1>
+            <h1 className="my-2 font-semibold">Dog Clothes</h1>
             </Link>
           <Link to={"/shop/catproducts"} >
             <img className="h-44 w-44 " src={catfood2} alt="" />
