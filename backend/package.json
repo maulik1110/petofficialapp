@@ -6,9 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon index.js",
-    "build": "nodemon build.js",
     "lint": "eslint --ext.js,.jsx,.ts,.tsx --ignore-path.gitignore./src"
   },
+  
   "keywords": [],
   "author": "",
   "license": "ISC",
