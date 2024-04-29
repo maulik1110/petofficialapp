@@ -49,11 +49,12 @@ const OverallInclude = ({ data, loading, loadmore, handleAddToCart }) => {
           })}
         </div>
         {loading && (
-          <img
-            className="w-screen h-screen object-cover rounded-lg"
-            src={loadinggif}
-            alt="Loading..."
-          />
+          // <img
+          //   className="w-screen h-screen object-cover rounded-lg"
+          //   src={loadinggif}
+          //   alt="Loading..."
+          // />
+          <h1>Loading...</h1>
         )}
         {/* {!loading && (
           <button
