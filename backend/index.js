@@ -64,8 +64,11 @@ const stripe = require('stripe')("sk_test_51OppufSCTYfNrNc7uiBaC0g6amoFw4q6RdLj6
 // CORS options specifying allowed origin
 const corsOptions = {
     origin: 'https://petofficialapp.vercel.app',
-    // other options if needed
+    optionsSuccessStatus: 200, // some legacy browsers (IE11, various SmartTVs) choke on 204
 };
+
+app.options('/api/create-checkout-session', cors(corsOptions));
+
 
 // Middleware setup
 app.use(express.json());
