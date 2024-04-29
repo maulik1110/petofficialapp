@@ -2,9 +2,13 @@ const express = require('express');
 const app = express();
 const cors = require('cors');
 const stripe = require('stripe')("sk_test_51OppufSCTYfNrNc7uiBaC0g6amoFw4q6RdLj6kaySDPhnXMovFHsS1Xq7nDihFytvHd6fWISD6WAUBA46DJessm500D0yqAEn7");
+const corsOptions = {
+    origin: 'https://petofficialapp.vercel.app',
+    // other options if needed
+};
 
 app.use(express.json());
-app.use(cors());
+app.use(cors(corsOptions));
 
 app.post("/api/create-checkout-session", async (req, res) => {
     const { products } = req.body;
