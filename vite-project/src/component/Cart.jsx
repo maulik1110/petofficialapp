@@ -170,22 +170,22 @@ const Cart = () => {
     const headers = {
       "Content-Type": "application/json",
     };
-    const response = await fetch(
-      "https://petofficialapp-api.vercel.app/api/create-checkout-session",
-      {
-        method: "POST",
-        headers: headers,
-        body: JSON.stringify(body),
-      }
-    );
     // const response = await fetch(
-    //   "http://localhost:7000/api/create-checkout-session",
+    //   "https://petofficialapp-api.vercel.app/api/create-checkout-session",
     //   {
     //     method: "POST",
     //     headers: headers,
     //     body: JSON.stringify(body),
     //   }
     // );
+    const response = await fetch(
+      "http://localhost:7000/api/create-checkout-session",
+      {
+        method: "POST",
+        headers: headers,
+        body: JSON.stringify(body),
+      }
+    );
 
     const session = await response.json();
     const result = stripe.redirectToCheckout({
